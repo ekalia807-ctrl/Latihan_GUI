@@ -12,7 +12,7 @@ public class AplikasiGUI {
         // 2. Intermediate Container (Menggunakan JPanel)
         JPanel panel = new JPanel();
         
-        // 3. Layout Manager (Menggunakan FlowLayout sesuai materi)
+        // 3. Layout Manager 
         FlowLayout layout = new FlowLayout(FlowLayout.CENTER);
         layout.setVgap(10);
         layout.setHgap(10);
@@ -44,7 +44,7 @@ public class AplikasiGUI {
             }
         });
 
-        // 5. Event Handling - Interface 2: KeyListener (Untuk deteksi ketikan di text field)
+        // 5. Event Handling: KeyListener Untuk deteksi ketikan di text field
         textNama.addKeyListener(new KeyListener() {
             public void keyTyped(KeyEvent e) {}
             public void keyPressed(KeyEvent e) {}
@@ -65,6 +65,6 @@ public class AplikasiGUI {
         frame.getContentPane().add(panel);
         
         // Menampilkan frame
-        frame.setVisible(true); // Di PDF ada yang pakai frame.show(), tapi setVisible(true) lebih umum sekarang
+        frame.setVisible(true);
     }
 }
